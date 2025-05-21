@@ -39,6 +39,32 @@
     }
   </style>
 </head>
+  <script> 
+const translations = {
+  en: {
+    heading: 'Welcome to TR Tours and Travel SDN BHD',
+    contact: 'Contact Us'
+  },
+  ms: {
+    heading: 'Selamat datang ke TR Tours and Travel SDN BHD',
+    contact: 'Hubungi Kami'
+  }
+};
+
+function setLanguage(lang) {
+  document.getElementById('main-heading').innerText = translations[lang].heading;
+  document.getElementById('contact-heading').innerText = translations[lang].contact;
+}
+</script>
+function bookTour() {
+  const date = document.getElementById('booking-date').value;
+  if (date) {
+    alert('You have selected: ' + date + '\nWe will contact you shortly.');
+  } else {
+    alert('Please select a date first.');
+  }
+}
+</script>
 <body>
 <div class="language-switcher">
   <select>
@@ -46,6 +72,9 @@
     <option value="bn">বাংলা</option>
     <option value="ms">Malay</option>
   </select>
+<div id="language-switcher">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('ms')">Bahasa Melayu</button>
 </div>
 <header>
   <img src="logo.png" alt="TR TOURS AND TRAVEL SDN BHD Logo">
@@ -83,6 +112,12 @@
 </section>
 <section id="contact" class="fade-in">
   <h2>Contact Us</h2>
+  <section id="calendar">
+  <h2>Book Your Tour</h2>
+  <label for="booking-date">Select a Date:</label>
+  <input type="date" id="booking-date" name="booking-date">
+  <button onclick="bookTour()">Book Now</button>
+</section>
   <p>📞 Call / WhatsApp: <a href="https://wa.me/601125920946">+60 1125 920946</a></p>
   <p>📧 Email: <a href="mailto:trtoursandtravelsdnbhd@gmail.com">trtoursandtravelsdnbhd@gmail.com</a></p>
   <form action="https://wa.me/601125920946" target="_blank" onsubmit="return handleFormSubmit(event)">
@@ -111,7 +146,7 @@
     const email = document.getElementById('email').value;
     const date = document.getElementById('date').value;
     const message = document.getElementById('message').value;
-    const text = `Name: ${name}%0AEmail: ${email}%0ADate: ${date}%0AMessage: ${message}`;
+    const text = `Name: ${Tamanna Tanjum Akhi}%0AEmail: ${trtoursandtravelsdnbhd@gmail.com}%0ADate: ${date}%0AMessage: ${message}`;
     window.open(`https://wa.me/601125920946?text=${text}`, '_blank');
     return false;
   }
