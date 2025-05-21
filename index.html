@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TR TOURS AND TRAVEL SDN BHD</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+    header { background-color: #008080; color: #fff; padding: 40px 20px; text-align: center; }
+    header img { width: 120px; height: auto; margin-bottom: 10px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    nav { background-color: #006666; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    .language-switcher { position: absolute; top: 20px; right: 20px; }
+    .language-switcher select { padding: 5px; border-radius: 5px; border: none; }
+    section { padding: 40px 20px; max-width: 1000px; margin: 20px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    section h2 { font-size: 2rem; margin-bottom: 20px; color: #006666; }
+    .package { background-color: #e6f7ff; padding: 20px; margin-bottom: 25px; border-left: 5px solid #008080; border-radius: 5px; }
+    .package h3 { color: #004d4d; margin-bottom: 10px; }
+    ul { list-style-type: none; padding-left: 0; }
+    ul li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+    ul li::before { content: "✔️"; position: absolute; left: 0; }
+    form { margin-top: 20px; }
+    form input, form textarea, form button { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+    form button { background-color: #008080; color: white; font-weight: bold; cursor: pointer; border: none; transition: background 0.3s; }
+    form button:hover { background-color: #005f5f; }
+    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s ease-out forwards; }
+    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+    footer { background-color: #008080; color: white; text-align: center; padding: 20px 10px; margin-top: 40px; }
+    footer a { color: #fff; text-decoration: underline; }
+    footer a:hover { text-decoration: none; }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: block; margin: 10px 0; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="language-switcher">
+  <select>
+    <option value="en">English</option>
+    <option value="bn">বাংলা</option>
+    <option value="ms">Malay</option>
+  </select>
+</div>
+<header>
+  <img src="logo.png" alt="TR TOURS AND TRAVEL SDN BHD Logo">
+  <h1>TR TOURS AND TRAVEL SDN BHD</h1>
+  <p>Bangladesh to Malaysia Tour Experts</p>
+</header>
+<nav>
+  <a href="#about">About</a>
+  <a href="#packages">Packages</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+<section id="about" class="fade-in">
+  <h2>About Us</h2>
+  <img src="about-tour.jpg" alt="About Tour" style="width:100%;border-radius:8px;margin-bottom:20px;">
+  <p>TR TOURS AND TRAVEL SDN BHD is your reliable partner for luxurious and worry-free travel experiences from Bangladesh to Malaysia.</p>
+</section>
+<section id="packages" class="fade-in">
+  <h2>Our Tour Packages</h2>
+  <img src="package.jpg" alt="Packages" style="width:100%;border-radius:8px;margin-bottom:20px;">
+  <div class="package"><h3>🌹 Romantic Couple Tour</h3><p>3 Nights in KL + 2 Nights in Langkawi. Includes Visa, Return Ticket, Tour Guide, Car & Driver.</p></div>
+  <div class="package"><h3>👨‍👩‍👧‍👦 Friends & Family Tour</h3><p>5 Nights + theme parks, shopping, vehicle. Includes Group Visa, Hotel, Flight.</p></div>
+  <div class="package"><h3>🛫 Custom Package Tour</h3><p>Design your dream vacation. Contact us for a quote.</p></div>
+</section>
+<section id="services" class="fade-in">
+  <h2>Our Services</h2>
+  <img src="services.jpg" alt="Services" style="width:100%;border-radius:8px;margin-bottom:20px;">
+  <ul>
+    <li>✈️ Visa Processing & Air Tickets</li>
+    <li>🚗 Car Rental with Driver</li>
+    <li>🏨 Comfortable Hotel Booking</li>
+    <li>👨‍💼 Tour Guide</li>
+    <li>📍 Sightseeing Options</li>
+  </ul>
+</section>
+<section id="contact" class="fade-in">
+  <h2>Contact Us</h2>
+  <p>📞 Call / WhatsApp: <a href="https://wa.me/601125920946">+60 1125 920946</a></p>
+  <p>📧 Email: <a href="mailto:trtoursandtravelsdnbhd@gmail.com">trtoursandtravelsdnbhd@gmail.com</a></p>
+  <form action="https://wa.me/601125920946" target="_blank" onsubmit="return handleFormSubmit(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="date" id="date" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+<footer>
+  <p>&copy; 2025 TR TOURS AND TRAVEL SDN BHD. All rights reserved.</p>
+  <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+<script>
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+    const message = document.getElementById('message').value;
+    const text = `Name: ${name}%0AEmail: ${email}%0ADate: ${date}%0AMessage: ${message}`;
+    window.open(`https://wa.me/601125920946?text=${text}`, '_blank');
+    return false;
+  }
+</script>
+</body>
+</html>
